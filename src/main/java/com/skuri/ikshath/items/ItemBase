@@ -7,7 +7,8 @@ import com.skuri.ikshath.ikshath;
 //Created on 10/24/18
 
 public class ItemBase extends Item {
-    protected string name;
+
+    protected String name;
 
     public ItemBase(String name)
     {
@@ -25,10 +26,11 @@ public class ItemBase extends Item {
     {
 
     }
+
     @Override
-    public setCreativeTab(CreativeTabs tab)
+    public ItemBase setCreativeTab(CreativeTabs tab)
     {
-        super.setCreativeTab();
+        super.setCreativeTab(tab);
         return this;
     }
 }
