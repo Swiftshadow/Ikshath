@@ -1,0 +1,26 @@
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import com.items.ikshath.ikshath;
+
+//Created on 10/24/18
+
+public class ItemBase extends Item
+    protected string name;
+
+    public ItemBase(String name)
+    {
+        this.name = name;
+        setUnlocalizedName(name);
+        setRegistryName(name);
+    }
+
+    public void registerItemModel()
+    {
+        ikshath.proxy.registerItemRenderer(this,0,name);
+    }
+
+    public setCreativeTab(CreativeTabs tab)
+    {
+        super.setCreativeTab();
+        return this;
+    }
