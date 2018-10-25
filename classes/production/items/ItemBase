@@ -1,10 +1,12 @@
+package com.skuri.ikshath.items;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import com.items.ikshath.ikshath;
+import com.skuri.ikshath.ikshath;
 
 //Created on 10/24/18
 
-public class ItemBase extends Item
+public class ItemBase extends Item {
     protected string name;
 
     public ItemBase(String name)
@@ -16,11 +18,17 @@ public class ItemBase extends Item
 
     public void registerItemModel()
     {
-        ikshath.proxy.registerItemRenderer(this,0,name);
+        ikshath.proxy.registerItemRenderer(this, 0, name);
     }
 
+    public void registerItemRenderer(Item item, int meta, String id)
+    {
+
+    }
+    @Override
     public setCreativeTab(CreativeTabs tab)
     {
         super.setCreativeTab();
         return this;
     }
+}
