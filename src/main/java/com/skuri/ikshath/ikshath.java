@@ -1,9 +1,9 @@
 package com.skuri.ikshath;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+        import net.minecraftforge.fml.common.Mod;
+        import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+        import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+        import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = ikshath.MODID, version = ikshath.VERSION)
 public class ikshath {
@@ -20,7 +20,7 @@ public class ikshath {
     public void init (FMLInitializationEvent event) {
 
     }
-    
+
     public void postInit(FMLPostInitializationEvent event) {
 
     }
